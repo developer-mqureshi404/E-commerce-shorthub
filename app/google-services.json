@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1044359640184",
+    "project_id": "tutedude-5f043",
+    "storage_bucket": "tutedude-5f043.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044359640184:android:fab1f2f91088dc67bee98d",
+        "android_client_info": {
+          "package_name": "com.example.tutedude.ecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo_0YZ2F6nQ2JB9jaVqgLCBSInP8ZYhVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
