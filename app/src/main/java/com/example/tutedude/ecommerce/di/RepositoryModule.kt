@@ -1,7 +1,6 @@
 package com.example.tutedude.ecommerce.di
 
-import com.example.tutedude.ecommerce.data.repository.ProductRepository
-import com.example.tutedude.ecommerce.data.repository.ProductRepositoryImpl
+import com.example.tutedude.ecommerce.data.repository.*
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -17,4 +16,35 @@ abstract class RepositoryModule {
     abstract fun bindProductRepository(
         impl: ProductRepositoryImpl
     ): ProductRepository
+    
+    // Payment App Repositories
+    @Binds
+    @Singleton
+    abstract fun bindWalletRepository(
+        impl: WalletRepository
+    ): IWalletRepository
+    
+    @Binds
+    @Singleton
+    abstract fun bindTransactionRepository(
+        impl: TransactionRepository
+    ): ITransactionRepository
+    
+    @Binds
+    @Singleton
+    abstract fun bindApprovedMemberRepository(
+        impl: ApprovedMemberRepository
+    ): IApprovedMemberRepository
+    
+    @Binds
+    @Singleton
+    abstract fun bindApprovalRepository(
+        impl: ApprovalRepository
+    ): IApprovalRepository
+    
+    @Binds
+    @Singleton
+    abstract fun bindFraudDetectionRepository(
+        impl: FraudDetectionRepository
+    ): IFraudDetectionRepository
 }
